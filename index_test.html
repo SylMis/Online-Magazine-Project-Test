@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="dropdownmenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+
+   <div class="dropdown">
+                                <button class="dropbtn">KARATE<i class="fa fa-caret-down"></i></button>
+                                    <div class="dropdown-content">
+                                          <a href="#">ABOUT KARATE</a>
+                                          <a href="#">KINDS OF KARATE</a>
+                                          <a href="#">KARATE TODAY</a>
+                                          <a href="Subpages/bushido.html">BUSHIDO</a>
+                                    </div>
+                        </div>
+
+                          <div class="dropdown">
+                                <button class="dropbtn">DIFFERENT<i class="fa fa-caret-down"></i></button>
+                                    <div class="dropdown-content">
+                                          <a href="Subpages/benefits.html">BENEFITS</a>
+                                          <a href="#">OUTFIT</a>
+                                          <a href="#">INTERESTING FACTS</a>
+                                    </div>
+                        </div>
+
+                        <div class="dropdown">
+                                <button class="dropbtn">ARTICLES<i class="fa fa-caret-down"></i></button>
+                                    <div class="dropdown-content">
+                                          <a href="Subpages/culture.html">KARATE IN CULTURE</a>
+                                          <a href="#">HOW TO TRAIN</a>
+                                          <a href="#">BUSHIDO TODAY</a>
+                                    </div>
+                        </div>
+
+                        <div class="dropdown">
+                                <button class="dropbtn">ABOUT US<i class="fa fa-caret-down"></i></button>
+                                    <div class="dropdown-content">
+                                          <a href="#">CONTACT</a>
+                                          <a href="#">SOCIAL MEDIA</a>
+                                          <a href="#">SEND US A POSTCARD</a>
+                                          <a href="#">POSTCARDS GALLERY</a>
+                                    </div>
+                        </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
