@@ -1,28 +1,29 @@
+<!-- I wasn't really sure how I can comment on my own code :/ -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Karate World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/a29188a2f6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Karate World | Website about karate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Karate World is a website about karate. History, intersting facts and everything about karate">
+        <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 
+<!-- Here is code for responsive drop-down menu which I rearanged for my website -->
 <body>
     <header>
     <nav class="navigation_container">
-
         <div class="logo_container">
-            <a href="index.html"> <img src="1920web%20logo.png" class="web_logo" alt="website logo"> </a>
+            <a href="index.html"> <img src="1920web%20logo.png" class="web_logo" alt="website logo"></a>
         </div>
 
             <nav class="topnav" id="myTopnav">
-                    <a href="#home" class="active">Home</a>
+                    <a href="index.html" class="active">Home</a>
 
                         <div class="dropdown">
-                                <button class="dropbtn">KARATE<i class="fa fa-caret-down"></i></button>
+                                <button class="dropbtn">KARATE</button>
                                     <div class="dropdown-content">
                                           <a href="#">ABOUT KARATE</a>
                                           <a href="#">KINDS OF KARATE</a>
@@ -32,7 +33,7 @@
                         </div>
 
                         <div class="dropdown">
-                                <button class="dropbtn">DIFFERENT<i class="fa fa-caret-down"></i></button>
+                                <button class="dropbtn">EXTRAS</button>
                                     <div class="dropdown-content">
                                           <a href="Subpages/benefits.html">BENEFITS</a>
                                           <a href="#">OUTFIT</a>
@@ -41,7 +42,7 @@
                         </div>
 
                         <div class="dropdown">
-                                <button class="dropbtn">ARTICLES<i class="fa fa-caret-down"></i></button>
+                                <button class="dropbtn">ARTICLES</button>
                                     <div class="dropdown-content">
                                           <a href="Subpages/culture.html">KARATE IN CULTURE</a>
                                           <a href="#">HOW TO TRAIN</a>
@@ -50,7 +51,7 @@
                         </div>
 
                         <div class="dropdown">
-                                <button class="dropbtn">ABOUT US<i class="fa fa-caret-down"></i></button>
+                                <button class="dropbtn">ABOUT US</button>
                                     <div class="dropdown-content">
                                           <a href="#">CONTACT</a>
                                           <a href="#">SOCIAL MEDIA</a>
@@ -66,22 +67,18 @@
 
          <form class="form_container" action="#">
                 <input type="text" placeholder="Search.." name="search" class="input_searchfield">
-                <button type="submit" class="searchbutton"><i class="fas fa-search"></i></button>
+                <button type="submit" class="submit">Submit</button>
         </form>
 
     </nav>
 
-
-
-
-
            <section class="landing_container">
-                <header class="header_container">
+                <div class="header_container">
                     <h1 class="header_text">Welcome To The <br>
                     World of Karate</h1>
-                    </header>
+                    </div>
 
-                <header class="small_header">
+                <div class="small_header">
                     <p class="paragraph_text">
                     “The ultimate aim of Karate lies <br>
                     not in victory nor defeat, but in <br>
@@ -89,20 +86,18 @@
                     of its participants.”              <br>
                             – Gichin Funakoshi
                     </p>
-                </header>
-
-
+                </div>
         </section>
     </header>
 
 
 
-
+ <!-- Here I stared main part of the website. There are two sections. One with articles and one is invitation to send a postcard. I used divs to separate different things in the sections-->
     <main>
         <div class="about_karate_container">
             <div class="Karate_text">
-                <h1 class="karate_title">
-                KARATE</h1>
+                <h2 class="karate_title">
+                KARATE</h2>
 
             <div class=karate_text_container>
                 <p class="about_karate_text">
@@ -115,55 +110,82 @@
 
 
 
-        <h1 class="articles_title">
-                ARTICLES</h1>
 
+
+
+        <h2 class="articles_title">
+                ARTICLES</h2>
+
+
+    <!-- This whole div is shortcut to articles. I used flex box here. -->
 
         <div class="articles_container">
-
             <div class="article_combo">
                 <div class="article_pic">
-                    <a href="#"> <img src="Main_page_pics/1920Bushido_pic.png" alt="bushido pic" class="mini_pic"></a>
+                    <a href="Subpages/bushido.html"> <img src="Main_page_pics/bushido_desktop-80.jpg" alt="Karate girl picture" class="mini_pic"></a>
 
-                    <p class="short_text">A short story about why Japan is one of the most outstanding countries in the World. In this short article, I want to explain the phenomenon of Japanese success, which dates back hundreds of years. The story of 8 virtues of Japanese samurai that could be useful in the modern world.
-                    </p>
+                       <a href="Subpages/bushido.html"><h2 class="short_text"><b>Bushido - principles we are increasingly forgetting</b>
+                        </h2></a>
+                            <p class="lead">In this short article, I want to explain the phenomenon of Japanese success, which dates back hundreds of years. The story of 8 virtues of Japanese samurai that could be useful in the modern world.</p>
                 </div>
             </div>
 
             <div class="article_combo">
                 <div class="article_pic">
-                    <a href="#"> <img src="Main_page_pics/1920inculture_pic.png"></a>
+                    <a href="Subpages/culture.html"> <img src="Main_page_pics/songo_desktop-80.jpg" class="mini_pic" alt="Songo from series Dragon Ball Z"></a>
 
-                    <p class="short_text">Japanese culture is not only known from the manga, anime or computer games but also from the martial arts such as karate. We can find this sport everywhere in that country, in literature, movies or daily lifestyle. But Japan is not only place where we can find it.  Let’s have a look where you should look for inspiration if you wanna get to know world of karate.
-                    </p>
+                        <a href="Subpages/culture.html"><h2 class="short_text"><b>Karate in culture</b></h2></a>
+
+                             <p class="lead">Japanese culture is not only known from the manga, anime or computer games but also from the martial arts such as karate. We can find this sport everywhere in that country, in literature, movies or daily lifestyle. But Japan is not only place where we can find it.  Let’s have a look where you should look for inspiration if you wanna get to know world of karate.</p>
                 </div>
             </div>
 
             <div class="article_combo">
                 <div class="article_pic">
-                    <a href="#"> <img src="Main_page_pics/1920benefits.png" alt="bushido pic" class="mini_pic"></a>
+                    <a href="Subpages/benefits.html"> <img src="Main_page_pics/benefits_desktop-80.jpg" alt="bushido pic" class="mini_pic"></a>
 
-                    <p class="short_text">Karate as a sport belongs to martial arts. It goes without saying that every sport is important for our health.  In the article below I will try to present some positive aspects of karate training. It is not only strength and physical fitness, because this kind of sport leaves a big mark not only in our body but also on our mind.
-                    </p>
+                        <a href="Subpages/benefits.html"><h2 class="short_text"><b>Training for body and spirit</b></h2></a>
+
+                              <p class="lead">Karate as a sport belongs to martial arts. It goes without saying that every sport is important for our health.  In the article below I will try to present some positive aspects of karate training. It is not only strength and physical fitness, because this kind of sport leaves a big mark not only in our body but also on our mind.</p>
                 </div>
             </div>
         </div>
+
+
+            <section class="postcards_container">
+                <section class="square">
+                        <h2 class="send_us_postcard">Send us a postcard!</h2>
+                            <p class="invitation">Are you planning to visit the        country of cherry blossoms?<br>
+                                Send us a postcard if you found the information on our site useful while traveling :)</p>
+                </section>
+
+                <section class="buttons">
+                        <div class="button_1">
+                           <h2 class="send_postcard">Send Postcard!</h2>
+                        </div>
+
+                        <div class="button_2">
+                            <h2 class="postcards_gallery">Postcards Gallery</h2>
+                        </div>
+                </section>
+            </section>
     </main>
+
 
     <footer class="footer_container">
                 <section class="footer_element_container" id="contact">
-                        <h3>Contact</h3>
+                        <h3>Contact:</h3>
                        email: info@karateworld.com
                 </section>
 
                 <section class="footer_element_container">
-                        <h3>Follow us</h3>
-                        <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-                        <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <h3>Social Media</h3>
+                        <a href="http://www.facebook.com"><img src="fb_logo.png" class="some" alt="Facebook logo"></a>
+                        <a href="http://www.instagram.com"><img src="instagram_logo.png" class="some" alt="facebook logo"></a>
                  </section>
     </footer>
 
-
+<!-- Script under is for responsive navigation -->
  <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

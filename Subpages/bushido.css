@@ -1,0 +1,173 @@
+.article_title {
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+
+.main_title {
+    font: 45px 'Karate', Arial, sans-serif;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font: 30px 'Karate', Arial, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.byline {
+    font-size: 11px;
+}
+
+.article_container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.first_p {
+    font-weight: 550;
+    margin-bottom: 60px;
+}
+
+.article_subtitle {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.article_text {
+    margin-bottom: 30px;
+}
+
+.picture_one {
+    width: 100%;
+}
+
+.picture_two {
+    width: 100%;
+}
+
+.picture_three {
+    width: 100%;
+}
+
+
+.list {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+  .article_picture {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .image_container {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .article_title {
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+    .article_header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .image_container {
+        margin-left: 120px;
+        margin-top: 40px
+    }
+
+    .main_title {
+    font: 90px 'Karate', Arial, sans-serif;
+    }
+
+    .subtitle {
+        margin-top: 15px;
+        font: 65px 'Karate', Arial, sans-serif;
+        line-height: 1.1;
+    }
+
+    .byline {
+        font-size: 11px;
+    }
+
+    .article_container {
+        width: 50%;
+    }
+
+    .first_p {
+        font-size: 23px;
+    }
+
+    .article_subtitle {
+        font-size: 25px
+    }
+
+    .article_text {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+ .picture_one {
+    width: 100%;
+}
+
+
+.picture_two {
+    width: 100%;
+}
+
+.picture_three {
+    width: 100%;
+}
+
+
+.article_picture {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
