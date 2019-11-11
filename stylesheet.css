@@ -33,17 +33,19 @@ body {
 .navigation_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .web_logo {
-    width: 50%;
-    margin-left: 50px;
+    width: 70%;
+    margin-left: 10px;
     margin-top: 5px;
 }
 
 .input_searchfield {
     padding: 8px;
     margin-top: 8px;
+    margin-left: 8px;
     font-size: 12px;
     border: grey solid 1px;
     color: black;
@@ -59,8 +61,10 @@ body {
 /* NAVIGATION: DROPDOWN RESPONSIVE MENU */
 
 .topnav {
+  margin-top: 5px;
   background-color: white;
   overflow: hidden;
+
 }
 
 .topnav a {
@@ -70,7 +74,7 @@ body {
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
-  font: 20px 'Japan', Arial, sans-serif;
+  font: 18px 'Japan', Arial, sans-serif;
 }
 
 
@@ -78,7 +82,6 @@ body {
 background-color: #AD3F5A;
 text-decoration-color: white;
 font: 20px 'Japan', Arial, sans-serif;
-margin-top: 5px;
 }
 
 
@@ -143,6 +146,27 @@ margin-top: 5px;
 }
 
 
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+    .form_container {
+        display: none;
+    }
+
+    .web_logo {
+    margin-left: 15px;
+    width: 65%;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -155,7 +179,6 @@ margin-top: 5px;
     display: block;
     text-align: left;
   }
-
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
   .topnav.responsive .dropdown .dropbtn {
@@ -164,28 +187,10 @@ margin-top: 5px;
     text-align: center;
   }
 
-
-.topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: left;
-    display: block;
-  }
-
-    .form_container {
-        display: none;
-        align-items: center;
-    }
-
-    .web_logo {
-        float: left;
-        margin-left: 10px;
-        width: 60%;
-    }
 }
 
  /* NAVIGATION: DROPDOWN RESPONSIVE MENU THE END */
+
 
 
 
@@ -202,24 +207,24 @@ margin-top: 5px;
 .header_container {
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 45%;
     transform: translateX(-50%) translateY(-50%);
     text-align:left;
-    width: 100%;
+    width: 80%;
+    color: white;
+    font: 30px 'Karate', sans-serif;
 }
 
-.header_text {
-    color: white;
-    font: 35px 'Karate', sans-serif;
-}
 
 .small_header {
     position: absolute;
     top: 85%;
-    left: 60%;
+    left: 50%;
     transform: translateX(-55%) translateY(-50%);
     text-align: left;
-    width: 100%;
+    width: 80%;
+    color: white;
+    font-size: 20px;
 }
 
 .paragraph_text {
@@ -253,7 +258,7 @@ margin-top: 5px;
 }
 
 
-.mini_pic {
+.min_pic {
     width: 100%;
     margin: auto;
 }
@@ -264,7 +269,6 @@ margin-top: 5px;
     flex-direction: column;
 }
 
-
 .articles_title {
     text-align: center;
     font: 60px 'Karate', Arial, sans-serif;
@@ -272,8 +276,10 @@ margin-top: 5px;
 }
 
 .article_pic {
-    align-content: center;
+    width: %;
+    margin: auto;
 }
+
 
 .short_text {
     text-align: center;
@@ -282,6 +288,11 @@ margin-top: 5px;
     font-family: sans-serif;
     margin: auto;
     padding: 15px 0px 5px;
+}
+
+.mini_pic {
+    width: 100%;
+    margin: auto;
 }
 
 .footer_container {
@@ -303,12 +314,11 @@ margin-top: 5px;
 }
 
 .some {
-    width: 20%;
+        width: 20%;
     }
 
 
 .lead {
-    width: 90%;
     margin: auto;
     padding-bottom: 50px;
     text-align: left;
@@ -382,7 +392,8 @@ a {
 
 .submit {
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 17px;
+    align-content: center;
     text-align: center;
 }
 
@@ -394,20 +405,17 @@ a {
 
    .header_container {
     text-align:left;
-    margin-left: 0px;
-    margin-top: -500px;
+    margin-top: -460px;
     position: absolute;
     top: 80%;
+    font: 80px 'Karate', sans-serif;
 }
 
-.header_text {
-    color: white;
-    font: 80px 'Karate', Arial, sans-serif;
-}
+
 
 
 .landing_container {
-    background-image: url(Main_page_pics/background_desktop-80.jpg);
+    background-image: url(Main_page_pics/background_desktop-80_resised.jpg);
     height: 900px;
     width: 100%;
     background-size: cover;
@@ -421,6 +429,7 @@ a {
     transform: translateX(-55%) translateY(-50%);
     text-align: right;
     width: auto;
+    font-size: 30px;
 }
 
 .paragraph_text {
@@ -431,7 +440,7 @@ a {
 
 
 .karate_title {
-    margin-left: 100px;
+    margin-left: 200px;
     font: 70px 'Karate', Arial, sans-serif;
     width: auto;
     text-align: left;
@@ -440,28 +449,31 @@ a {
 
 
 .about_karate_text {
-    width: 50%;
+    width: 40%;
     margin-bottom: 50px;
     font-family: sans-serif;
     font-size: 20px;
     line-height: 1.5;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 200px;
 
 }
+
 
 
 .articles_title {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 200px;
     font: 60px 'Karate', Arial, sans-serif;
 }
 
 .articles_container {
-    margin: 50px;
+    margin: 50px 200px;
     flex-direction: row;
     justify-content: space-between;
-}
+    display: flex;
+    padding: 0px;
+  }
 
 .article_combo {
     display: flex;
@@ -469,18 +481,18 @@ a {
 }
 
     .article_pic {
-        width: 400px;
-        align-content: center;
-    }
+        width: 350px;
+        margin: 0px;
+}
 
     .mini_pic {
-     width: 400px;
-    height: auto;
+        margin: auto;
+        max-width: 100%;
     }
 
 .short_text {
     text-align: left;
-    width: 400px;
+    width: 350px;
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
@@ -514,15 +526,16 @@ a {
 
     .lead {
     text-align: left;
-    width: 400px;
-    font-size: 20px;
+    width: 350px;
+    font-size: 17px;
     font-family: sans-serif;
 }
 
     .postcards_container {
-        background-image: url(Main_page_pics/japan_street_resized_desktop.jpg);
+        background-image: url(Main_page_pics/japan_street_resized_desktop_newresised.jpg);
         height: 1000px;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     .square {
@@ -578,8 +591,4 @@ a {
         margin-left: 55%;
     }
 }
-
-
-
-
 
